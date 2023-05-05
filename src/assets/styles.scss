@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+//ADD FONTS Geometria
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'), url('@/assets/fonts/geometria_light-webfont.woff2') format('woff2'),
+    url('@/assets/fonts/geometria_light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'), url('@/assets/fonts/geometria_medium-webfont.woff2') format('woff2'),
+    url('@/assets/fonts/geometria_medium-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'), url('@/assets/fonts/geometria_medium-webfont.woff2') format('woff2'),
+    url('@/assets/fonts/geometria_medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'), url('@/assets/fonts/geometria_bold-webfont.woff2') format('woff2'),
+    url('@/assets/fonts/geometria_bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'), url('@/assets/fonts/geometria_extrabold-webfont.woff2') format('woff2'),
+    url('@/assets/fonts/geometria_extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+//BASE STYLES
+#app {
+  max-width: 100vw;
+  min-width: 1195px;
+  margin: 0 auto;
+
+  @media #{$media} and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    min-width: $tablet-min;
+    max-width: $tablet-max;
+  }
+
+  @media #{$media} and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    min-width: $mobile-min;
+    max-width: $mobile-max;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  background: $color-background;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
