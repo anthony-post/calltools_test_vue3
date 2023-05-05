@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/calltools_test_vue3/',
   plugins: [vue()],
   resolve: {
     alias: {
